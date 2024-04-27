@@ -26,7 +26,7 @@ def recommendor(movie):
 
 selected_movie = st.selectbox('Select your movie', movies_list)
 
-button = st.button('Recommend')
+button = st.button('Get Recomendations')
 if button:
     recommendations = recommendor(selected_movie)
     for i in recommendations:
